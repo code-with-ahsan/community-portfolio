@@ -118,11 +118,11 @@ function CourseSubmissionsPage({ course }) {
         }}
       >
         {submissions?.length > 0 ? (
-          <ul className="submissions mt-8 flex flex-wrap gap-5">
+          <ul className="submissions mt-8 grid grid-cols-auto-fit gap-5">
             {submissions.map((sub) => (
               <li
                 key={sub.screenshotUrl}
-                className="max-w-xs transition ease-in-out duration-150 rounded-md shadow-md relative hover:-translate-y-1 hover:shadow-lg hover:cursor-pointer"
+                className="transition ease-in-out duration-150 rounded-md shadow-md relative hover:-translate-y-1 hover:shadow-lg hover:cursor-pointer"
               >
                 {sub.by.uid === user?.uid && !isDeletingSubmission && (
                   <button

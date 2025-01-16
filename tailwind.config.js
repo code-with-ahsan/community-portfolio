@@ -6,6 +6,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      gridTemplateColumns: {
+        'auto-fit': 'repeat(auto-fit, minmax(20rem, 1fr))',
+      },
       spacing: {
         '9/16': '56.25%',
       },
